@@ -1,13 +1,14 @@
 {
-  "name": "eslint-config-mina",
+  "name": "@sdcxp/eslint-config-mina",
   "version": "0.0.4",
   "description": "ESLint config for Wechat Miniprogram",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:listenzz/eslint-config-mina.git"
+    "url": "git@github.com:sdcxp/eslint-config-mina.git"
   },
+  "homepage": "https://github.com/sdcxp/eslint-config-mina",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.11.0",
     "@typescript-eslint/parser": "^2.11.0",
