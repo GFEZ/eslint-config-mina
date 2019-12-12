@@ -18,3 +18,5 @@ module.exports = {
   extends: ['mina', 'plugin:prettier/recommended']
 };
 ```
+
+为了支持可选链，需要为 VS Code 安装 JavaScript and TypeScript Nightly 插件
