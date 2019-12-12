@@ -1,6 +1,6 @@
 {
   "name": "@sdcxp/eslint-config-mina",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "ESLint config for Wechat Miniprogram",
   "main": "index.js",
   "license": "MIT",
