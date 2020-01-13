@@ -1,9 +1,7 @@
-# eslint-config-mina
-
 ## Installation
 
 ```
-yarn add -D @sdcxp/eslint-config-mina
+yarn add -D @gfez/eslint-config-wechat-miniprogram
 ```
 
 _Note: We're using `yarn` to install deps. Feel free to change commands to use `npm` 3+ and `npx` if you like_
@@ -15,8 +13,6 @@ Add to your eslint config (`.eslintrc.js`, or `eslintConfig` field in `package.j
 ```js
 module.exports = {
   root: true,
-  extends: ['@sdcxp/mina', 'plugin:prettier/recommended']
+  extends: ['@gfez/wechat-miniprogram', 'plugin:prettier/recommended']
 };
 ```
-
-为了支持可选链，需要为 VS Code 安装 JavaScript and TypeScript Nightly 插件
