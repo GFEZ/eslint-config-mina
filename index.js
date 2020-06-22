@@ -10,11 +10,11 @@
 
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
 
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   plugins: ['eslint-comments', 'prettier', 'jest'],
@@ -28,25 +28,28 @@ module.exports = {
         // Flow Plugin
         // The following rules are made available via `eslint-plugin-flowtype`
         'flowtype/define-flow-type': 1,
-        'flowtype/use-flow-type': 1
-      }
+        'flowtype/use-flow-type': 1,
+      },
     },
     {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
       rules: {
-        '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-        'no-unused-vars': 'off'
-      }
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+        ],
+        'no-unused-vars': 'off',
+      },
     },
     {
       files: ['*.{spec,test}.{js,ts,tsx}', '**/__tests__/**/*.{js,ts,tsx}'],
       env: {
         jest: true,
-        'jest/globals': true
-      }
-    }
+        'jest/globals': true,
+      },
+    },
   ],
 
   // Map from global var to bool specifying if it can be redefined
@@ -90,7 +93,7 @@ module.exports = {
     setInterval: false,
     setTimeout: false,
     window: false,
-    XMLHttpRequest: false
+    XMLHttpRequest: false,
   },
 
   rules: {
@@ -260,6 +263,6 @@ module.exports = {
     'jest/no-disabled-tests': 1,
     'jest/no-focused-tests': 1,
     'jest/no-identical-title': 1,
-    'jest/valid-expect': 1
-  }
-};
+    'jest/valid-expect': 1,
+  },
+}
