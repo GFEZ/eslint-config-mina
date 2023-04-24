@@ -21,6 +21,10 @@ module.exports = {
 
   overrides: [
     {
+      files: ['*.js'],
+      parser: '@babel/eslint-parser',
+    },
+    {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
@@ -30,6 +34,7 @@ module.exports = {
           { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
         ],
         'no-unused-vars': 'off',
+        'no-undef': 'off',
       },
     },
     {
