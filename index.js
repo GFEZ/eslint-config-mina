@@ -21,17 +21,6 @@ module.exports = {
 
   overrides: [
     {
-      files: ['*.js'],
-      parser: 'babel-eslint',
-      plugins: ['flowtype'],
-      rules: {
-        // Flow Plugin
-        // The following rules are made available via `eslint-plugin-flowtype`
-        'flowtype/define-flow-type': 1,
-        'flowtype/use-flow-type': 1,
-      },
-    },
-    {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
@@ -206,10 +195,6 @@ module.exports = {
     'eslint-comments/no-unused-disable': 1, // disallow disables that don't cover any errors
     'eslint-comments/no-unused-enable': 1, // // disallow enables that don't enable anything or enable rules that weren't disabled
 
-    // Prettier Plugin
-    // https://github.com/prettier/eslint-plugin-prettier
-    'prettier/prettier': 2,
-
     // Stylistic Issues
     // These rules are purely matters of style and are quite subjective.
 
@@ -231,7 +216,7 @@ module.exports = {
     'no-empty-character-class': 1, // disallow the use of empty character classes in regular expressions
     'no-lonely-if': 0, // disallow if as the only statement in an else block (off by default)
     'no-new-object': 1, // disallow use of the Object constructor
-    'no-spaced-func': 1, // disallow space between function identifier and application
+    'func-call-spacing': 1, // disallow space between function identifier and application
     'no-ternary': 0, // disallow the use of ternary operators (off by default)
     'no-trailing-spaces': 1, // disallow trailing whitespace at the end of lines
     'no-underscore-dangle': 0, // disallow dangling underscores in identifiers
